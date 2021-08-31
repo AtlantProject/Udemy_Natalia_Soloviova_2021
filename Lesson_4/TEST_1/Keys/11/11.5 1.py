@@ -15,32 +15,23 @@
 Вывести на экран и сравнить между собой идентификаторы созданных объектов.
 """
 
-A = 5
-print(type(A))
-print(id(A))
+a = 5
+print('Type a: ', type(a), ', id: ', id(a))
 
-B = 12
-print(type(B))
-print(id(B))
+b = 12
+print('Type b: ', type(b), ', id: ', id(b))
 
-C = 5.7
-print(type(C))
-print(id(C))
+c = 5.7
+print('Type c: ', type(c), ', id: ', id(c))
 
-A = 12
-print(type(A))
-print(id(A))
+a = 12
+print('Id a: ', id(a), ', id a == id b: ', id(a) == id(b))
 
-A = 5.7
-print(type(A))
-print(id(A))
+a = c
+print('Id a: ', id(a), ', id a == id c: ', id(a) == id(c))
 
-D, E, F = 125, 125, 125
-
-print(type(D))
-print(type(E))
-print(type(F))
-
-print(id(D))
-print(id(E))
-print(id(F))
+D = E = F = 125
+print('id D: ', id(D))
+print('id E: ', id(E))
+print('id F: ', id(F))
+print('id D == id E == id F: ', id(D) == id(E) == id(F))
