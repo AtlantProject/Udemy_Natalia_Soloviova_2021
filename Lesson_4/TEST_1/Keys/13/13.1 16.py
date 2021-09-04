@@ -1,0 +1,18 @@
+"""
+Вам пришло закодированное методом cp037 сообщение:
+'\xe6\x88\x81\xa3@\x89\xa2@\xa8\x96\xa4\x99@\x86\x81\xa5\x96\xa4\x99\x89\xa3\x85@\x97\x99\x96\x87\x99\x81\x94\x94\x89\x95\x87@\x93\x81\x95\x87\xa4\x81\x87\x85o'.
+
+Напишите ответ и закодируйте его тем же методом.
+В случае возникновения ошибки кодирования-декодирования, проигнорируйте ее.
+"""
+
+encoded_msg = b'\xe6\x88\x81\xa3@\x89\xa2@\xa8\x96\xa4\x99@\x86\x81\xa5' \
+              b'\x96\xa4\x99\x89\xa3\x85@\x97\x99\x96\x87\x99\x81\x94\x94' \
+              b'\x89\x95\x87@\x93\x81\x95\x87\xa4\x81\x87\x85o'
+
+decoded_msg = encoded_msg.decode(encoding='cp037', errors='ignore')
+print(decoded_msg)
+
+answ = 'Python!'
+encoded_answ = answ.encode(encoding='cp037', errors='ignore')
+print(encoded_answ)
