@@ -11,7 +11,9 @@ matrix = [[1, 4, 6],
 sum = 0
 
 for i in range(0, len(matrix)):
+    print(f"i = {i}")
     for j in range(i+1, len(matrix[i])):
+        print(f"j = {j}")
         sum += matrix[i][j]
 
 print(sum)
