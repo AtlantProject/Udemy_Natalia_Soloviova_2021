@@ -7,9 +7,11 @@
 """
 
 name = input("Введите свое имя ")
+sex = input('Enter your sex (m/f): ')
 age = input("Введите возраст ")
 city = input("Введите город ")
 
+print()
 print(f"This is {name}.")
-print(f"He (she) is {age} years old.")
-print(f"He (she) lives in {city}.")
+print(f"{'He' if sex == 'm' else 'She'} is {age} years old.")
+print(f"{'He' if sex == 'm' else 'She'} lives in {city}.")

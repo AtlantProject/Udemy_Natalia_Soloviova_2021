@@ -9,8 +9,10 @@
 # Этап 1
 l = input("Введите 4 числа через пробел: ")
 # l = "22 33 44 556"
-print(l)
+print(f"Введенные 4 числа: l = {l}")
+print(f"Тип l - {type(l)}")
 
+# разделяем строку l на список и помещаем в отдельные переменные числа, intуем их
 num1, num2, num3, num4 = list(map(int, l.split()))
 # numbers = list(map(int(), l.split()))
 # numbers = l.split()
