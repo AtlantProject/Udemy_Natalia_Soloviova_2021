@@ -15,5 +15,5 @@ for char in ascii_uppercase:
     file_path = os.path.join(dir_path, f"{char}.txt")
     # print(file_path)
     with open(file_path, 'w') as f:
-        f.write(char)
+        f.write(char + char)
 

@@ -104,7 +104,7 @@ def del_student(surname, name=None):
     all_students = read_file()
     all_students = list(filter(lambda i: (i['name'] != name and name is not None) or i['surname'] != surname, all_students))
     write_file(all_students)
-    print(f"Студент '{name+' ' if name is not None else ''}{surname}' успешно удален!")
+    # print(f"Студент '{name+' ' if name is not None else ''}{surname}' успешно удален!")
 
 
 # add_student(name='Владислав', surname='Колесников')

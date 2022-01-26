@@ -26,9 +26,9 @@ min_len = min(len(bin1_data), len(bin2_data))
 
 for i in range(0, min_len):
     if bin1_data[i].endswith(b'\n'):
-        bin1_data[i] = bin1_data[i][:-1]
+        bin1_data[i] = bin1_data[i][:-2]
     if bin2_data[i].endswith(b'\n'):
-        bin2_data[i] = bin2_data[i][:-1]
+        bin2_data[i] = bin2_data[i][:-2]
     res.append(bin1_data[i] + b' ' + bin2_data[i] + b'\n')
 
 if len(bin1_data) > min_len:
