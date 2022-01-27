@@ -15,7 +15,17 @@ for row in rows:
     name1, pr1, name2, pr2 = row.split()
     print(f"{name1:10}{pr1:10}{name2:10}{pr2:10}")
 
-print("*" * 50)
+print("=" * 75)
 for row in rows:
     name1, pr1, name2, pr2 = row.split()
     print(f"{name1:>10}{pr1:>10}{name2:>10}{pr2:>10}")
+
+print("=" * 75)
+for row in rows:
+    name1, pr1, name2, pr2 = row.split()
+    print(f"{name1:<10}{pr1:<10}{name2:<10}{pr2:<10}")
+
+print("=" * 75)
+for row in rows:
+    name1, pr1, name2, pr2 = row.split()
+    print(f"{name1:^10}{pr1:^10}{name2:^10}{pr2:^10}")
