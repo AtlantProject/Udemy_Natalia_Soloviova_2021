@@ -8,12 +8,18 @@ A.txt, B.txt, C.txt, ….., Z.txt, каждый из которых содерж
 import os.path
 from string import ascii_uppercase
 
+# в текущей директории создаем папку
 dir_path = './res_13'
 
-# print(ascii_uppercase)
+# print(ascii_uppercase)      # ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+# в цикле создаем эти файлы
 for char in ascii_uppercase:
+    # генерируем имя и путь к файлу
     file_path = os.path.join(dir_path, f"{char}.txt")
     # print(file_path)
-    with open(file_path, 'w') as f:
-        f.write(char)
 
+    # Создаем эти файлы
+    with open(file_path, 'w') as f:
+        # записываем в файл символ char
+        f.write(char + " 123 23324")
